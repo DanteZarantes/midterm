@@ -87,7 +87,22 @@ body {
   border-radius: 3px;
 }
 
+.container {
+  width: 100%;
+  max-width: 375px;
+  box-sizing: border-box;
+}
+
+.trails-grid {
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
 @media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
   .trails-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.75rem;
@@ -102,18 +117,16 @@ body {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+
   .trails-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 2.25rem;
   }
 }
-
-.site-footer {
-  background: var(--ink);
-  color: var(--sand);
-}
-
 .site-footer a {
   color: var(--moss);
   text-decoration: none;
@@ -205,5 +218,13 @@ body {
 
   .include-card {
     padding: 1.7rem 1.9rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1279.98px) {
+  .col-lg-7,
+  .col-lg-8 {
+    flex: 0 0 auto;
+    width: 100%;
   }
 }
