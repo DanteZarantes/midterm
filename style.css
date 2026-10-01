@@ -108,3 +108,102 @@ body {
     gap: 2.25rem;
   }
 }
+
+.site-footer {
+  background: var(--ink);
+  color: var(--sand);
+}
+
+.site-footer a {
+  color: var(--moss);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: var(--clay);
+  text-decoration: underline;
+}
+
+.trips-hero {
+  background: linear-gradient(rgba(35, 40, 31, 0.55), rgba(35, 40, 31, 0.75)),
+              url("https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1600&h=900&fit=crop") center/cover no-repeat;
+  min-height: 55vh;
+  color: var(--sand);
+  padding: 4rem 0;
+}
+
+.trips-table {
+  background: var(--sand);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.trips-table thead th {
+  background: var(--forest);
+  color: var(--sand);
+  font-family: Arial, sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border: none;
+  white-space: nowrap;
+}
+
+.trips-table th[scope="row"] {
+  color: var(--forest);
+}
+
+.trips-table tbody tr:hover {
+  background: #f0ead6;
+}
+
+.trips-table tfoot td {
+  background: #f4f0e6;
+}
+
+.badge-diff {
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 0.2rem 0.6rem;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.diff-easy { background: var(--moss); }
+.diff-mod  { background: var(--clay); }
+.diff-hard { background: #8a3324; }
+
+.include-card {
+  background: var(--sand);
+  border-left: 6px solid var(--moss);
+  border-radius: 6px;
+  padding: 1.4rem 1.6rem;
+}
+
+.include-card h3 {
+  font-size: 1.2rem;
+  color: var(--forest);
+  margin-bottom: 0.75rem;
+}
+
+.include-card ul {
+  padding-left: 1.1rem;
+  color: #4a4a3d;
+}
+
+.include-card li {
+  margin-bottom: 0.4rem;
+}
+
+@media (min-width: 768px) {
+  .trips-hero {
+    min-height: 60vh;
+  }
+
+  .include-card {
+    padding: 1.7rem 1.9rem;
+  }
+}
